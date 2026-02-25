@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       book_ids:
-        description: "书籍 ID 列表（逗号或空格分隔）"
+        description: "7440368074156425753"
         required: true
         type: string
       file_format:
-        description: "输出格式"
+        description: "txt"
         required: true
         type: choice
         options:
@@ -16,12 +16,12 @@ on:
           - epub
         default: "txt"
       save_path:
-        description: "保存路径（相对于项目根目录）"
+        description: "downloads"
         required: false
         type: string
         default: "downloads"
       concurrent:
-        description: "并发下载数量（1-5）"
+        description: "1"
         required: false
         type: number
         default: 3
